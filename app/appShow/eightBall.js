@@ -1,14 +1,9 @@
 import { StatusBar, View, Text, } from 'react-native';
 import { useEffect } from 'react';
-import DirectionButton from './Components/directionButton';
-import Styles from './Styles/styles';
+import DirectionButton from '../Components/directionButton';
+import Styles from '../Styles/styles';
 
 export default function App() {
-
-  useEffect(() => {
-    StatusBar.setBarStyle('light-content');
-    StatusBar.setBackgroundColor('#4CAF50');
-  }, []);
 
   return (
     <View style={[Styles.container, {justifyContent: 'center'}]}>

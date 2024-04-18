@@ -1,5 +1,4 @@
-import { StatusBar, View, Text, } from 'react-native';
-import { useEffect } from 'react';
+import { View, Text, } from 'react-native';
 import DirectionButton from '../Components/directionButton';
 import Styles from '../Styles/styles';
 
@@ -13,7 +12,7 @@ export default function App() {
       {/* back button */}
       <DirectionButton
         text="Go Back"
-        path="../index.js"
+        path="../index"
         style={Styles.backButtonStyle}
       />
         <Text style={Styles.buttonText}>

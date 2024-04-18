@@ -36,6 +36,12 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         borderRadius: 10,
     },
+    interface: {
+        backgroundColor: 'rgba(255, 255, 255, 1)',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flex: 1,
+    },
 });
 
 export default styles;
