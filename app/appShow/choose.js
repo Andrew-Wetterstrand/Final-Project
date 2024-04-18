@@ -31,7 +31,7 @@ export default function App() {
             {/* button to go to the eight ball */}
             <DirectionButton
                 text="Procced to the eight ball"
-                path="/eightBall"
+                path="./eightBall"
                 style={Styles.buttonStyle}
             />
 
