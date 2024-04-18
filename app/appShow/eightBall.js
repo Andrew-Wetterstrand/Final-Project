@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, Image, Pressable } from 'react-native'; // Import Image and Pressable
 import DirectionButton from '../Components/directionButton';
 import Styles from '../Styles/styles';
 import { initializeDatabase, getQuotes } from './sql.js';
@@ -33,13 +33,16 @@ export default function App() {
         style={Styles.buttonStyle}
       />
 
-      {/* Display random quote */}
-      {randomQuote && (
-        <Text style={Styles.quote}>{randomQuote.quote}</Text>
-      )}
-
-      {/* Button to show a new random quote */}
-      <Button title="Show Random Quote" onPress={selectRandomQuote} />
+      {/* Eight ball image */}
+      <Pressable onPress={selectRandomQuote} style={Styles.eightBallContainer}>
+        <Image source={require('../../assets/8ball.png')} style={Styles.eightBallImage} />
+        {/* Display random quote */}
+        {randomQuote && (
+          <Text style={Styles.quote}>
+            {randomQuote.quote}
+          </Text>
+        )}
+      </Pressable>
     </View>
   );
 }

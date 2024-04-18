@@ -15,7 +15,7 @@ export default function App() {
             {/* back button */}
             <DirectionButton
                 text="Go Back"
-                path="../index"
+                path="../index" // not sure if this is the right path
                 style={Styles.backButtonStyle}
             />
 

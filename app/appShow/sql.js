@@ -8,22 +8,17 @@ export const initializeDatabase = () => {
             `CREATE TABLE IF NOT EXISTS quotes (
                 id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
                 quote TEXT NOT NULL,
-                option1 INTEGER DEFAULT 0,
-                option2 INTEGER DEFAULT 0,
-                option3 INTEGER DEFAULT 0,
-                option4 INTEGER DEFAULT 0,
-                option5 INTEGER DEFAULT 0,
-                option6 INTEGER DEFAULT 0,
-                option7 INTEGER DEFAULT 0,
-                option8 INTEGER DEFAULT 0,
-                option9 INTEGER DEFAULT 0
+                Inspirational TEXT,
+                GoalOriented TEXT,
+                SelfLove TEXT
             );`
         );
 
         // Insert initial quotes
-        tx.executeSql('INSERT INTO quotes (quote) VALUES ("First seek to know thyself")');
-        tx.executeSql('INSERT INTO quotes (quote) VALUES ("A confused foe is a beaten foe")');
-        tx.executeSql('INSERT INTO quotes (quote) VALUES ("There is no victory without sacrifice")');
+        tx.executeSql('INSERT INTO quotes (quote, Inspirational, GoalOriented, SelfLove) VALUES ("First seek to know thyself", "Perserverance", "Determination", "Self-Acceptance")');
+        tx.executeSql('INSERT INTO quotes (quote, Inspirational, GoalOriented, SelfLove) VALUES ("A confused foe is a beaten foe", "Perserverance", "Determination", "Self-Acceptance")');
+        tx.executeSql('INSERT INTO quotes (quote, Inspirational, GoalOriented, SelfLove) VALUES ("There is no victory without sacrifice", "Courage", "Determination", "Self-Acceptance")');
+        
     });
 };
 

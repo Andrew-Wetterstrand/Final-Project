@@ -4,8 +4,6 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         flex: 1,
-        height: '100%',
-        width: '100%',
     },
     buttonText: {
         color: '#4CAF50',
@@ -41,6 +39,23 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
+    },
+    quote: {
+        fontSize: 20,
+        marginBottom: 20,
+        position: 'absolute', 
+        top: '50%',
+        color: '#ffffff',
+    },
+    eightBallContainer: {
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+    },
+    eightBallImage: {
+        flex: 1,
+        resizeMode: 'contain',
     },
 });
 
