@@ -57,6 +57,25 @@ const styles = StyleSheet.create({
         flex: 1,
         resizeMode: 'contain',
     },
+    modalButton: {
+        marginHorizontal: 10, 
+        marginVertical: 5,
+        width: "25%",
+        backgroundColor: '#ffffff',
+        borderColor: '#4CAF50',
+        borderWidth: 5,
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        borderRadius: 10,
+    },
+    modelButtonClicked: {
+        backgroundColor: 'black',
+    },
+    modalButtonContainer: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+    },
 });
 
 export default styles;
