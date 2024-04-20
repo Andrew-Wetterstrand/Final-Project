@@ -76,6 +76,18 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'center',
     },
+    disabledButton: {
+        backgroundColor: 'grey', 
+        opacity: 0.5, 
+        marginHorizontal: 10, 
+        marginVertical: 5,
+        backgroundColor: '#ffffff',
+        borderColor: '#4CAF50',
+        borderWidth: 5,
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        borderRadius: 10,
+      },
 });
 
 export default styles;

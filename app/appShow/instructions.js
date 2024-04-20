@@ -1,5 +1,5 @@
 import { View, Text, } from 'react-native';
-import DirectionButton from '../Components/directionButton';
+import GoBackButton from '../Components/goBackButton';
 import Styles from '../Styles/styles';
 
 export default function App() {
@@ -10,9 +10,8 @@ export default function App() {
       <Text style={Styles.title}>Instructions</Text>
 
       {/* back button */}
-      <DirectionButton
+      <GoBackButton
         text="Go Back"
-        path="../index"
         style={Styles.backButtonStyle}
       />
         <Text style={Styles.buttonText}>

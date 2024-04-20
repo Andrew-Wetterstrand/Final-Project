@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { View, Text, Image, Pressable } from 'react-native'; // Import Image and Pressable
-import DirectionButton from '../Components/directionButton';
+import GoBackButton from '../Components/goBackButton';
 import Styles from '../Styles/styles';
 import { initializeDatabase, getQuotes } from './sql.js';
-import { useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams, Link } from 'expo-router';
 
 export default function App() {
   const [quotes, setQuotes] = useState([]);
@@ -67,7 +67,7 @@ export default function App() {
         filteredQuotes.push(quotes[i]);
       }
     }
-    console.log(filteredQuotes);
+    //console.log(filteredQuotes);
     const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
     setRandomQuote(filteredQuotes[randomIndex]);
   };
@@ -75,10 +75,9 @@ export default function App() {
   return (
     <View style={[Styles.container, { justifyContent: 'center' }]}>
       {/* Button to go back */}
-      <DirectionButton
-        text="Choose your own cards"
-        path="./choose"
-        style={Styles.buttonStyle}
+      <GoBackButton
+        text="Go Back"
+        style={Styles.backButtonStyle}
       />
 
       {/* Eight ball image */}

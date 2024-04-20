@@ -13,4 +13,4 @@ export default DirectionButton = ({ text, style, path }) => {
                 </Pressable>
             </Link>
     );
-}
+};
