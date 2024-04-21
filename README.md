@@ -54,8 +54,7 @@ Dependencies
 
 "react-native-screens": "~3.29.0"
 
-this was the code I used:
-C:\Users\Andrew\MotivationMobile>npx expo install expo-constants expo-linking expo-router expo-sqlite expo-status-bar re
+this was the code I used: npx expo install expo-constants expo-linking expo-router expo-sqlite expo-status-bar re
 act-native-reanimated react-native-safe-area-context react-native-screens
 
 
